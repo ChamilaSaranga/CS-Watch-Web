@@ -1,0 +1,98 @@
+/* Review Section */
+.review-section {
+    background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.review-wrapper {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.review-wrapper h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.review-wrapper p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Form */
+.review-form .form-group {
+    margin-bottom: 20px;
+}
+
+.review-form input,
+.review-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.review-form textarea {
+    resize: none;
+}
+
+.rating-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.rating-group label {
+    font-size: 24px;
+    color: #ddd;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.rating-group input {
+    display: none;
+}
+
+.rating-group input:checked ~ label,
+.rating-group label:hover,
+.rating-group label:hover ~ label {
+    color: #ffc107;
+}
+
+.submit-btn {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .review-wrapper {
+        padding: 20px;
+    }
+
+    .rating-group label {
+        font-size: 20px;
+    }
+}
